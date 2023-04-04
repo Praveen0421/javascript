@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fetch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <form>
+    <div class="form-input-btn-block">
+      <div class="firstName-block input-block">
+        <label for="firstname">FirstName</label>
+        <input type="text" placeholder="firstname" id="firstname" name="firstname">
+      </div>
+      <div class="lastName-block input-block">
+        <label for="lastname">LastName</label>
+        <input type="text" placeholder="lastname" id="lastname" name="lastname">
+      </div>
+      <div class="email-block input-block">
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" id="email" name="email">
+      </div>
+    </div>
+
+    <div class="submit-update-block">
+      <button class="button submit-btn" type="button" onclick="addResponse()"><i class="fa-solid fa-database"></i><span
+          class="submit-text btn-text">Submit</span></button>
+      <button class="button update-btn" type="button"><i class="fa-solid fa-square-check"></i><span
+          class="update-text btn-text">Update</span></button>
+    </div>
+
+  </form>
+  <div class="table-block">
+    <table id="table"></table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
